@@ -1,0 +1,25 @@
+
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/faxsans"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/emergency_call"></ImageView>
+
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB101B"
+    android:orientation="vertical"
+    tools:context=".splashscreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:fontFamily="@font/faxsans"
+        android:layout_marginTop="300dp"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/emergency_call"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's your Emergency?"
+        android:textSize="15dp"
+        android:fontFamily="@font/faxsans"
+        android:letterSpacing="0.15"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        >
+
+
+    </TextView>
+
+</LinearLayout>
