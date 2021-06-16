@@ -28,7 +28,6 @@
         android:id="@+id/firstnum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nigeria Emergency service"
         android:background="@drawable/roundbtn"
         android:fontFamily="@font/faxsans"
         android:textColor="#FB101B"
@@ -38,9 +37,9 @@
     </Button>
 
     <Button
+        android:id="@+id/secondnum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lagos ambulance service"
         android:fontFamily="@font/faxsans"
         android:background="@drawable/roundbtn"
         android:textColor="#FB101B"
@@ -50,9 +49,9 @@
     </Button>
 
     <Button
+        android:id="@+id/thirdnum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Private ambulance service"
         android:fontFamily="@font/faxsans"
         android:background="@drawable/roundbtn"
         android:textColor="#FB101B"
@@ -62,9 +61,9 @@
     </Button>
 
     <Button
+        android:id="@+id/fourthnum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Private ambulance service"
         android:fontFamily="@font/faxsans"
         android:background="@drawable/roundbtn"
         android:textColor="#FB101B"
