@@ -1,14 +1,79 @@
 {
-  "hospital": [
+  "Hospital": [
     {
       "name1": "Nigeria Emergency service",
       "name2": "Lagos ambulance service",
       "name3": "Private ambulance service",
       "name4": "Private ambulance service",
-      "num1": "3823",
-      "num2": "119",
-      "num3": "809",
-      "num4": "3782"
+      "num1": "112",
+      "num2": "767",
+      "num3": "08035578766",
+      "num4": "07062025218"
+    }
+  ],
+
+  "Police": [
+    {
+      "name1": "Nigeria Emergency service",
+      "name2": "Nigeria Police service",
+      "name3": "The Nigeria Police Force",
+      "name4": "The Nigeria Police",
+      "num1": "112",
+      "num2": "767",
+      "num3": "019500144",
+      "num4": "07011847697"
+    }
+  ],
+
+  "Fire fighters": [
+    {
+      "name1": "Nigeria Emergency service",
+      "name2": "Lagos Emergency service",
+      "name3": "Federal Fire Service",
+      "name4": "Lagos State Fire Service",
+      "num1": "112",
+      "num2": "767",
+      "num3": "08032003557",
+      "num4": "08033235891"
+    }
+  ],
+
+  "Quarantine": [
+    {
+      "name1": "NCDC service" ,
+      "name2": "NCDC Emergency service",
+      "name3": "Nigeria Emergency service",
+      "name4": "Emergency service",
+      "num1": "080097000010",
+      "num2": "07036708970",
+      "num3": "112",
+      "num4": "767"
+    }
+  ],
+
+  "Therapist": [
+    {
+      "name1": "Nigerian Counselling Centre",
+      "name2": "Nigerian Crisis Line",
+      "name3": "LUTH (SURPIN)",
+      "name4": "LUTH CENTRE",
+      "num1": "08062106493",
+      "num2": "08092106493",
+      "num3": "09080217555",
+      "num4": "09034400009"
+    }
+  ],
+
+  "Disaster agency": [
+    {
+      "name1": "Nema",
+      "name2": "National Emergency Agency",
+      "name3": "Nigeria Emergency service",
+      "name4": "Emergency service",
+      "num1": "234092905777",
+      "num2": "08032003555",
+      "num3": "112",
+      "num4": "767"
     }
   ]
 }

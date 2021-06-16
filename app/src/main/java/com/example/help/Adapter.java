@@ -60,10 +60,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.CategoryHolder> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    int index = getPosition();
-                    Log.e(tag, String.valueOf(index));
+                   // int index = getPosition();
+
+                    Log.e(tag, String.valueOf(title.getText()));
                     Intent i = new Intent(v.getContext(), numbers.class);
-                    i.putExtra("number",index);
+                    i.putExtra("title",title.getText());
                     v.getContext().startActivity(i);
                 }
             });

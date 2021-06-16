@@ -23,7 +23,8 @@ import java.util.List;
 
 public class numbers extends AppCompatActivity {
 
-    String tag,name1,name2,name3,name4,num1,num2,num3,num4,callingnumber;
+    String tag,name1,name2,name3,name4,num1,num2,num3,num4,callingnumber,jsonobj;
+
     Button firstnum,secondnum,thirdnum,fourthnum;
 
     @Override
@@ -31,6 +32,12 @@ public class numbers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.numbers);
+
+        //retrieving value from intent
+        Intent i = getIntent();
+        jsonobj = i.getStringExtra("title");
+        Log.e(tag, jsonobj);
+
 
         //hooks
 
@@ -96,7 +103,7 @@ public class numbers extends AppCompatActivity {
         {
             String jsonLocation = loadJSONFromAsset();
             JSONObject jsonobject = new JSONObject(jsonLocation);
-            JSONArray jarray = (JSONArray) jsonobject.getJSONArray("hospital");
+            JSONArray jarray = (JSONArray) jsonobject.getJSONArray(jsonobj);
             for(int i=0;i<jarray.length();i++)
             {
                 JSONObject jb =(JSONObject) jarray.get(i);
@@ -109,8 +116,7 @@ public class numbers extends AppCompatActivity {
                 num3 = jb.getString("num3");
                 num4 = jb.getString("num4");
 
-                Log.e(tag, name1);
-                Log.e(tag, num2);
+
             }
 
         } catch (JSONException e) {

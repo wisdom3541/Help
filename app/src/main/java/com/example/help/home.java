@@ -48,12 +48,12 @@ public class home extends AppCompatActivity {
         ArrayList<cardAdapter> carddisplay = new ArrayList<>();
         carddisplay.add(new cardAdapter(R.drawable.hospital,"Hospital"));
         carddisplay.add(new cardAdapter(R.drawable.policeman,"Police"));
-        carddisplay.add(new cardAdapter(R.drawable.fire_truck,"Fire"));
-        carddisplay.add(new cardAdapter(R.drawable.safety_suit,"Corona"));
+        carddisplay.add(new cardAdapter(R.drawable.fire_truck,"Fire fighters"));
+        carddisplay.add(new cardAdapter(R.drawable.safety_suit,"Quarantine"));
         carddisplay.add(new cardAdapter(R.drawable.therapist,"Therapist"));
-        carddisplay.add(new cardAdapter(R.drawable.disaster,"Disaster"));
+        carddisplay.add(new cardAdapter(R.drawable.disaster,"Disaster agency"));
         carddisplay.add(new cardAdapter(R.drawable.snail,"Animal control"));
-        carddisplay.add(new cardAdapter(R.drawable.road_work,"Public work"));
+        carddisplay.add(new cardAdapter(R.drawable.road_work,"Public worker"));
 
 
 
