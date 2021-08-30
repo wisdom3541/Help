@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+
         android:padding="10dp">
 
         <ImageView
@@ -29,8 +30,8 @@
             android:id="@+id/card_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:text="Hospital"
+            android:textAlignment="center"
             android:textColor="#ff0000"
             android:textSize="18dp"
             android:textStyle="bold">
