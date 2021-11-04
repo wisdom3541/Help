@@ -1,14 +1,11 @@
 package com.example.help;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -28,7 +25,7 @@ public class home extends AppCompatActivity {
         //hooks
         card = findViewById(R.id.card_view);
 
-        cardview();
+        cardView();
 
     }
 
@@ -37,28 +34,24 @@ public class home extends AppCompatActivity {
         finish();
     }
 
-    private void cardview() {
+    private void cardView() {
 
-       card.setHasFixedSize(true);
-       card.setLayoutManager(new GridLayoutManager(this,2));
-
-
+        card.setHasFixedSize(true);
+        card.setLayoutManager(new GridLayoutManager(this, 2));
 
 
-        ArrayList<cardAdapter> carddisplay = new ArrayList<>();
-        carddisplay.add(new cardAdapter(R.drawable.hospital,"Hospital"));
-        carddisplay.add(new cardAdapter(R.drawable.policeman,"Police"));
-        carddisplay.add(new cardAdapter(R.drawable.fire_truck,"Fire fighters"));
-        carddisplay.add(new cardAdapter(R.drawable.safety_suit,"Quarantine"));
-        carddisplay.add(new cardAdapter(R.drawable.therapist,"Therapist"));
-        carddisplay.add(new cardAdapter(R.drawable.disaster,"Disaster agency"));
-        carddisplay.add(new cardAdapter(R.drawable.snail,"Animal control"));
-        carddisplay.add(new cardAdapter(R.drawable.road_work,"Public worker"));
+        ArrayList<cardAdapter> cardDisplay = new ArrayList<>();
+        cardDisplay.add(new cardAdapter(R.drawable.hospital, "Hospital"));
+        cardDisplay.add(new cardAdapter(R.drawable.policeman, "Police"));
+        cardDisplay.add(new cardAdapter(R.drawable.fire_truck, "Fire fighters"));
+        cardDisplay.add(new cardAdapter(R.drawable.safety_suit, "Quarantine"));
+        cardDisplay.add(new cardAdapter(R.drawable.therapist, "Therapist"));
+        cardDisplay.add(new cardAdapter(R.drawable.disaster, "Disaster agency"));
+        cardDisplay.add(new cardAdapter(R.drawable.snail, "Animal control"));
+        cardDisplay.add(new cardAdapter(R.drawable.road_work, "Public worker"));
 
 
-
-
-        adapter = new Adapter(carddisplay);
+        adapter = new Adapter(cardDisplay);
         card.setAdapter(adapter);
 
     }

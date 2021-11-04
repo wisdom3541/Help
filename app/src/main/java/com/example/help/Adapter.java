@@ -28,17 +28,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.CategoryHolder> {
     public CategoryHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.carddesign,parent,false);
-        CategoryHolder categoryHolder = new CategoryHolder(view);
-        return categoryHolder;
+        return new CategoryHolder(view);
 
     }
 
     @Override
     public void onBindViewHolder(@NonNull CategoryHolder holder, int position) {
 
-        cardAdapter categoryadapter = card.get(position);
-        holder.image.setImageResource(categoryadapter.getImage());
-        holder.title.setText(categoryadapter.getTitle());
+        cardAdapter categoryAdapter = card.get(position);
+        holder.image.setImageResource(categoryAdapter.getImage());
+        holder.title.setText(categoryAdapter.getTitle());
 
     }
 
@@ -57,16 +56,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.CategoryHolder> {
       public CategoryHolder(@NonNull View itemView) {
             super(itemView);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                   // int index = getPosition();
-
-                    Log.e(tag, String.valueOf(title.getText()));
-                    Intent i = new Intent(v.getContext(), numbers.class);
-                    i.putExtra("title",title.getText());
-                    v.getContext().startActivity(i);
-                }
+            itemView.setOnClickListener(v -> {
+                Log.e(tag, String.valueOf(title.getText()));
+                Intent i = new Intent(v.getContext(), numbers.class);
+                i.putExtra("title",title.getText());
+                v.getContext().startActivity(i);
             });
 
             //hooks

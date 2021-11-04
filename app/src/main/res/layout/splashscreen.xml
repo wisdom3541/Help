@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FB101B"
     android:orientation="vertical"
-    tools:context=".splashscreen">
+    tools:context=".SplashScreen">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HELP"
-        android:textColor="#fff"
-        android:textStyle="bold"
-        android:textSize="60dp"
-        android:fontFamily="@font/faxsans"
         android:layout_marginTop="300dp"
-        android:textAlignment="center" />
+        android:fontFamily="@font/faxsans"
+        android:text="@string/help"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:layout_margin="10dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:src="@drawable/emergency_call"/>
+        android:layout_margin="10dp"
+        android:src="@drawable/emergency_call"
+        android:contentDescription="@string/logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What's your Emergency?"
-        android:textSize="15dp"
+        android:layout_margin="10dp"
         android:fontFamily="@font/faxsans"
         android:letterSpacing="0.15"
+        android:text="@string/what_s_your_emergency"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:layout_margin="10dp"
-        >
-
+        android:textSize="15sp">
 
     </TextView>
 
